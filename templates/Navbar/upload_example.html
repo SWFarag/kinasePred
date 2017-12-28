@@ -1,0 +1,24 @@
+{% extends "/Base/base_nrps.html" %}
+{% block title %}
+<title>Upload-Example</title>
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-5">
+          <h2>Example of an Upload File</h2>
+          <div class="list-group">
+              <a href="{{url_for('getAspirin') }}" class="list-group-item">
+        <h4 class="list-group-item-heading">Aspirin sdf file</h4>
+        <p class="list-group-item-text" style="color:blue;">Aspirin SDF</p>
+      </a>
+              <a href="{{url_for('getMolecules') }}" class="list-group-item">
+                  <h4 class="list-group-item-heading">Zipped sdf files</h4>
+                  <p class="list-group-item-text" style="color:blue;">Zipped SDF</p>
+              </a>
+          </div>
+      </div>
+  </div>
+  </div>
+{% endblock %}
